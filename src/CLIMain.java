@@ -28,7 +28,7 @@ public class CLIMain {
         }
         List<Point2D.Double> plist
                 = PositionHistogram.getHist(sys.getWalkers());
-        String filename = "output.txt";
+        String filename = "output-500.txt";
         try ( PrintStream out
                 = new PrintStream(new FileOutputStream(filename))) {
             for (Point2D.Double q : plist) {
@@ -40,7 +40,7 @@ public class CLIMain {
         }
         plist
                 = PositionHistogram.getHist(sys.getWalkers());
-        filename = "output-2.txt";
+        filename = "output-1000.txt";
         try ( PrintStream out
                 = new PrintStream(new FileOutputStream(filename))) {
             for (Point2D.Double q : plist) {

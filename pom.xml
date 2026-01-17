@@ -7,7 +7,13 @@
     <groupId>mands</groupId>
     <artifactId>RandomWalk</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <dependencies>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>Random</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+    </dependencies>
     <properties>
         <maven.compiler.source>21</maven.compiler.source>
         <maven.compiler.target>21</maven.compiler.target>
